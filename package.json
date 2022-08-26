@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Metadata Scraper for Apify",
   "dependencies": {
-    "apify": "^3.0.2"
+    "apify": "^2.0.7"
   },
   "scripts": {
     "start": "node main.js"
