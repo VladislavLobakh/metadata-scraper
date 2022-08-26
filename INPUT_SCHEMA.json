@@ -1,0 +1,22 @@
+{
+  "title": "Schema for the Metadata Scraper",
+  "type": "object",
+  "schemaVersion": 1,
+  "properties": {
+    "urls": {
+      "title": "Page URLs",
+      "type": "array",
+      "description": "URLs of the web pages to extract the metadata from. They must have either HTTP or HTTPS scheme.",
+      "editor": "stringList",
+      "prefill": ["https://www.apify.com/", "https://blog.apify.com"]
+    },
+    "proxy": {
+      "title": "Proxy configuration",
+      "type": "object",
+      "description": "Select proxies to be used by your crawler.",
+      "prefill": { "useApifyProxy": true },
+      "editor": "proxy"
+    }
+  },
+  "required": ["urls"]
+}
