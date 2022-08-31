@@ -11,7 +11,15 @@ Apify.main(async () => {
   const requests = [];
   for (const url of urls) {
     if (!new URL(url)) throw new Error('All URLs must be valid URLs!');
-    requests.push({ url });
+
+    let headers;
+    if (
+      input.urlPatternForStaticUserAgent &&
+      url.includes(input.urlPatternForStaticUserAgent)
+    ) {
+      headers = { 'User-Agent': 'ApifyMetaScraper' };
+    }
+    requests.push({ url, headers });
   }
 
   const requestList = await Apify.openRequestList('start-urls', requests);

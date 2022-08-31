@@ -10,6 +10,11 @@
       "editor": "stringList",
       "prefill": ["https://www.apify.com/", "https://blog.apify.com"]
     },
+    "urlPatternForStaticUserAgent": {
+        "title": "URL Pattern for static User Agent",
+        "type": "string",
+        "description": "URL Pattern for static User Agent 'ApifyMetaScraper'"
+    },
     "proxy": {
       "title": "Proxy configuration",
       "type": "object",
