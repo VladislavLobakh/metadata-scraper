@@ -13,7 +13,8 @@
     "urlPatternForStaticUserAgent": {
         "title": "URL Pattern for static User Agent",
         "type": "string",
-        "description": "URL Pattern for static User Agent 'ApifyMetaScraper'"
+        "description": "URL Pattern for static User Agent 'ApifyMetaScraper'",
+        "editor": "textfield"
     },
     "proxy": {
       "title": "Proxy configuration",
